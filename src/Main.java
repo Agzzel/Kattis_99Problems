@@ -11,6 +11,7 @@ public class Main {
 
         n = sc.nextInt();
         int magnitude = String.valueOf(n).length();
+        sc.close();
 
         int closestNumber = 0;// the result that the program will output
         int firstDigit = Integer.parseInt(Integer.toString(n).substring(0, 1));
@@ -23,7 +24,7 @@ public class Main {
                 closestNumber = 99;
                 break;
             case 3:
-                diffWithLargest = (firstDigit * 100 + 99) - n;//calculate the largets number and subtract with n
+                diffWithLargest = (firstDigit * 100 + 99) - n;//calculate the largest number and subtract with n
                 diffWithLowest = n - (firstDigit * 100 - 1);
 
                 if(Math.min(diffWithLargest, diffWithLowest) == diffWithLargest){
