@@ -63,26 +63,3 @@ public class Main {
         System.out.println(closestNumber);
     }
 }
-
-/*
-Måste returnera det närmaste talet till N som slutar på 99.
-Hantera om två olika tal är lika långt ifrån N. T.ex för N = 249 så är 299 och 199 lika långt ifrån N.
-299 - 249 = 50 och 249 - 199 = 50.
-
-Denna lösning klarar alla testfall på Kattis. Det finns en del upprepning av kod som inte ser så snyggt ut,
-dock är det nödvändigt för att programmet ska fungera. Det finns bara två möjliga svar för varje siffra, så utmaningen
-var att veta vilken av de två möjliga siffrorna som var närmast N. Alltså vilken siffra som hade lägst skillnad med N.
-Därför behövde jag räkna ut de två siffrorna och sedan subtrahera de med N, den siffra som hade lägst skillnad med N
-var den som skulle returneras. Den gamla lösningen var liknande men tog inte alls hänsyn till vilken siffra som var närmast N,
-den kontrollerade bara om N bestod av nollor och bestämde rätt svar därefter. Fungerade inte med alla testfall.
- */
-
-/*
-This solution passes all test cases on Kattis. There is some repetition of code that does not look very nice,
-but it is necessary for the program to work. There are only two possible answers for each digit, so the challenge was to know
-which of the two possible numbers was closest to N. That is, which number had the smallest difference with N.
-Therefore I needed to calculate the two numbers and then subtract them with N, the number that had the lowest difference with N
-was the one to be returned. The old solution was similar but didn't take into account which digit was closest to N at all,
-it only checked if N was made up of zeros and determined the correct answer accordingly. Did not work with all test cases.
-
- */
